@@ -48,7 +48,7 @@ default:
     diaLaboral = 'si no existe, no se labora';
 }
 console.log(`switch - el ${diaEscrito} ${diaLaboral}`);
-document.getElementById('resultado').value = ` El ${diaEscrito} ${diaLaboral}`;
+const respuesta = document.getElementById('resultado').value = ` El ${diaEscrito} ${diaLaboral}`;
 
 }
 
