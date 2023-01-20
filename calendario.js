@@ -1,9 +1,9 @@
 console.log('conectado')
 // varibales para guardar los datos de los inputs
 function Calculadora (){
-let dia = 19//document.getElementById('dia').value
-let mes = 01 //document.getElementById('mes').value
-let año = 2023 //document.getElementById('año').value
+let dia = document.getElementById('dia').value
+let mes = document.getElementById('mes').value
+let año = document.getElementById('año').value
 
 // variable guardando todos los datos en uno y darlo en formato fecha 
 let fechaAConsultar = new Date(`${mes} ${dia}, ${año}`);
@@ -17,7 +17,7 @@ let diaLaboral = ``
 switch (day)  {
 case 0:
   diaEscrito = 'Domingo';
-  diaLaboral = 'No es dia laboral';
+  diaLaboral = 'Descansito';
   break;
 case 1:
   diaEscrito = 'Lunes';
@@ -41,7 +41,7 @@ case 5:
     break;
 case 6:
     diaEscrito = 'Sabado';
-    diaLaboral = 'No es dia laboral';
+    diaLaboral = 'Descansito';
     break;
 default:
     diaEscrito = 'ese dia no existe';

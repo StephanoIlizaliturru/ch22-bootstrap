@@ -77,16 +77,18 @@
     </nav>
 
     <!--contenedor-->
-    <div class="container col-4 col-sm-12">
+    <div class="container-sm col-4 col-sm-12">
         <!--numeros a introducir dia mes y año -->
-        <input placeholder="dd" type="number" id="dia" min = 1 max 31>
+        <input placeholder="dd" type="number" id="dia" min = 1 max = 31>
         <input placeholder="mm" type="number" id="mes" min = 1 max = 12>
         <input placeholder="aaaa" type="number" id="año" min = 1920 max = 2050>
 <!-- boton calcular-->
         <div class="container">
             <button class="btn btn-success " type="button" name="button" id="calcul" >Calcular</button>
         </div>
-        <p id = "resultado" id = "calcul" class = "text-center" id = "click" id="funcionando" id="switch"></p>
+        <div class="row-cols-lg-12 col-12">
+            <input class="btn btn-outline-success" placeholder="El martes, día laborable" type="text" id="resultado">
+            </div>
 
    
 
